@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Buttons with Set and Save in Three.js</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        .overlay { position: absolute; top: 10px; left: 10px; }
+        .leftoverlay { position: absolute; top: 400px; left: 10px; display: flex; flex-direction: column;}
+        .rightoverlay { position: absolute; top: 10px; left: 1000px; display: flex; flex-direction: column;}
+        .rightsection { display: flex; flex-direction: row;}
+        .button-group { margin-bottom: 10px; }
+        .status-display {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ccc;
+            z-index: 10; /* Make sure it's above other elements */
+        }
+    </style>
+</head>
+<body>
+    <div id="three-container"></div>
+    <div id="radio-container" class="overlay"></div>
+    <div id="left-container" class="leftoverlay"></div>
+    <div id="right-container" class="rightoverlay"></div>
+    <div id="right-section-1" class="rightsection"></div>
+    <div id="right-section-2" class="rightsection"></div>
+    <div id="right-section-3" class="rightsection"></div>
+    <div id="right-section-4" class="rightsection"></div>
+    <div id="status-display" class="status-display"></div>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/DragControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three-gltf-loader@1.111.0/index.min.js"></script> -->
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
